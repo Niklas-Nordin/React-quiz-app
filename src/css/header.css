@@ -1,0 +1,28 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem; /* motsvarar gap-10 */
+  position: relative;
+}
+
+.header-title {
+  font-size: 4rem; /* text-6xl */
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5rem; /* mt-20 */
+  color: white;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0);
+}
+
+.react-logo {
+  position: absolute;
+  top: -7rem;
+  right: -320px;
+  width: 700px;
+  opacity: 0.6;
+  pointer-events: none;
+  user-select: none;
+  animation: spin 8s linear infinite;
+  z-index: -10;
+}
