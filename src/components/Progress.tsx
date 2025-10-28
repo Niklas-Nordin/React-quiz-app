@@ -1,19 +1,18 @@
-import type {Action} from "../App";
+import "../css/progress.css"
 
 type Props = {
-  index: number;
-  numQuestions: number;
+  index: number
+  numQuestions: number
   points: number;
   maxPoints: number;
-  dispatch?: React.Dispatch<Action>;
 }
 
-function Progress({index, numQuestions, points, maxPoints, dispatch}: Props) {
+function Progress({points, maxPoints, numQuestions, index}: Props) {
   return (
-    <>
-      <progress value={index} max={numQuestions}></progress>
+    <div className="progress-container">
+      <p>{index + 1} / {numQuestions}</p>
       <p>{points} / {maxPoints}</p>
-    </>
+    </div>
   );
 }
 

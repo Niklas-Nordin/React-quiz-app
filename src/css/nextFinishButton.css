@@ -1,6 +1,6 @@
 .next-finish-button {
   position: absolute;
-  bottom: 2rem;        /* avstånd från botten */
+  bottom: 4rem;        /* avstånd från botten */
   left: 50%;
   transform: translateX(-50%);
   width: 60%;

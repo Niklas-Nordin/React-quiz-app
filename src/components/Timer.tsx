@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import TimesUp from "./TimesUp";
 import type { Action } from "../App";
+import "../css/timer.css"
 
 type Props = {
     timeRemaining: number
@@ -32,7 +33,14 @@ function Timer({timeRemaining, status, selectedOption, dispatch}: Props) {
   return (
     <>
       {timeRemaining > 0 && (
-        <progress className="time-bar" value={timeRemaining} max={1000} />
+        <div className="time-bar">
+          <div style={{
+            width: `${(timeRemaining / 20) * 100}%`,
+            backgroundColor: timeRemaining > 10 ? "rgba(0, 255, 0, 0.6)" : timeRemaining > 5 ? "rgba(255, 238, 0, 0.6)" : "rgba(255, 0, 0, 0.6)"
+          }}
+          className="time-left">
+          </div>
+        </div>
     )}
 
       {timeRemaining <= 0 && (

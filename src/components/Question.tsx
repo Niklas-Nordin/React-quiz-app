@@ -4,6 +4,7 @@ import "../css/question.css"
 import NextFinishButton from "./NextFinishButton";
 import Timer from "./Timer";
 import SelectOption from "./SelectOption";
+import Progress from "./Progress";
 
 type Props = {
     numQuestions: number
@@ -16,11 +17,11 @@ type Props = {
     dispatch: React.Dispatch<Action>
 }
 
-function Question({numQuestions, question, index, points, selectedOption, timeRemaining, dispatch}: Props) {
+function Question({numQuestions, question, index, points, maxPoints, selectedOption, timeRemaining, dispatch}: Props) {
 
   return (
     <div className="question-container">
-      <p>{index + 1} / {numQuestions}</p>
+      <Progress index={index} numQuestions={numQuestions} points={points} maxPoints={maxPoints} />
       <div className="question-text-container">
         <h2 className="question">{question.question}</h2>
       </div>

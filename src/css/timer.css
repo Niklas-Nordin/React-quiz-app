@@ -1,3 +1,12 @@
 .time-bar {
+    background-color: gray;
+    border-radius: 20px;
+    width: 75%;
+    height: 0.5rem;
+    margin: 2rem 0;
+}
 
+.time-left {
+    height: 0.5rem;
+    border-radius: 20px;
 }

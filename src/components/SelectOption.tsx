@@ -10,14 +10,14 @@ type Props = {
 }
 
 function SelectOption({ question, selectedOption, index, points, dispatch }: Props) {
-
+    
     const correctOption = question.correctOption
-  let bg = ""
+    let bg = ""
 
   
-  const handleClickOption = (i: number) => {
-    dispatch({type: "newAnswer", payload: { questionIndex: index, answerIndex: i, points: points }})
-  }
+    const handleClickOption = (i: number) => {
+        dispatch({type: "newAnswer", payload: { questionIndex: index, answerIndex: i, points: points}})
+    }
   return (
     <>
       <ul className="option-container">
