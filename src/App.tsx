@@ -51,7 +51,7 @@ const initialState: State = {
   score: 0,
   answers: {},
   points: 0,
-  timeRemaining: 20
+  timeRemaining: 500
 }
 
 const reducer = (state: State, action: Action): State => {
@@ -175,14 +175,9 @@ function App() {
       {status === "ready" && <StartingPage numQuestions={numQuestions} dispatch={dispatch} />}
       {status === "active" && 
       <>
-        <Header />
         <Progress index={index} numQuestions={numQuestions} points={points} maxPoints={maxPoints} />
         <Timer timeRemaining={timeRemaining} status={status} selectedOption={answers[index] ?? null} dispatch={dispatch} />
         <Question numQuestions={numQuestions} question={currentQuestion} index={index} points={points} maxPoints={maxPoints} selectedOption={answers[index] ?? null} dispatch={dispatch} />
-
-        {answers[index] !== undefined && (
-          <NextFinishButton numQuestions={numQuestions} dispatch={dispatch} index={index} />
-        )}
       </>
       }
       {status === "timeOut" &&

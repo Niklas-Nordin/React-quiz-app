@@ -1,6 +1,6 @@
-import Timer from "./Timer";
 import type { Question as QuestionType } from "../App";
 import type { Action } from "../App";
+import "../css/question.css"
 import NextFinishButton from "./NextFinishButton";
 
 type Props = {
@@ -23,11 +23,13 @@ function Question({numQuestions, question, index, points, selectedOption, dispat
   }
 
   return (
-    <div>
+    <div className="question-container">
         <p>{index + 1} / {numQuestions}</p>
-        <h2>{question.question}</h2>
-        
-        <ul>
+        <div className="question-text-container">
+          <h2 className="question">{question.question}</h2>
+        </div>
+
+        <ul className="option-container">
           {question.options.map((opt, i) => {
             if (selectedOption !== null) {
               if (i === correctOption) {
@@ -35,22 +37,24 @@ function Question({numQuestions, question, index, points, selectedOption, dispat
               } else {
                 bg = "rgba(255, 0, 0, 0.6)"
               }
-            } else {
-              bg = "rgb(240, 240, 240)"
             }
 
             return (
-              <li key={i}>
-              <button 
-                disabled={selectedOption !== null}
-                onClick={() =>
-                handleClickOption(i)}
-                style={{ backgroundColor: bg }}
-                className={`${bg}`}>{opt}</button>
+              <li className="option-items" key={i}>
+                <button 
+                  disabled={selectedOption !== null}
+                  onClick={() =>
+                  handleClickOption(i)}
+                  style={{ backgroundColor: bg }}
+                  className="option-button">{opt}</button>
             </li>
             )
           })}
         </ul>
+
+        {selectedOption !== null && (
+          <NextFinishButton numQuestions={numQuestions} dispatch={dispatch} index={index} />
+        )}
     </div>
   );
 }

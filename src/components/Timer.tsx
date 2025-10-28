@@ -32,7 +32,7 @@ function Timer({timeRemaining, status, selectedOption, dispatch}: Props) {
   return (
     <>
       {timeRemaining > 0 && (
-        <p>{timeRemaining}</p>
+        <progress value={timeRemaining} max={20} />
     )}
 
       {timeRemaining <= 0 && (

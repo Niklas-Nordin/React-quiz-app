@@ -1,4 +1,5 @@
 import type { Action } from "../App";
+import "../css/nextFinishButton.css"
 
 type Props = {
     numQuestions: number
@@ -10,9 +11,9 @@ function NextFinishButton({numQuestions, dispatch, index}: Props) {
   return (
     <>
       {index < numQuestions - 1 ? (
-        <button onClick={() => dispatch({type: "nextQuestion", payload: index + 1})}>Next</button>
+        <button className="next-finish-button" onClick={() => dispatch({type: "nextQuestion", payload: index + 1})}>Next</button>
       ) : (
-        <button onClick={() => dispatch({type: "finish"})}>Finish</button>
+        <button className="next-finish-button" onClick={() => dispatch({type: "finish"})}>Finish</button>
       )}
     </>
   );

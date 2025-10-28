@@ -20,9 +20,8 @@
   top: -7rem;
   right: -320px;
   width: 700px;
-  opacity: 0.6;
   pointer-events: none;
   user-select: none;
   animation: spin 8s linear infinite;
-  z-index: -10;
+  z-index: -5;
 }
