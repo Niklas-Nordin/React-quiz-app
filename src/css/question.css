@@ -39,11 +39,10 @@
     padding: 0.8rem;
     margin: 0.5rem auto;
     border: none;
-    border-bottom: 2px solid rgb(231, 231, 231);
+    border-bottom: 3px solid rgb(129, 149, 240);
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
-    background-color: rgb(141, 168, 218);
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    background: linear-gradient(to top left, rgb(181, 177, 238), rgb(255, 255, 255));
+    color: rgb(0, 0, 0);
 }

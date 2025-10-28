@@ -1,0 +1,15 @@
+.times-up-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 100vh;
+}
+
+.times-up {
+    font-size: 40pt;
+    color: white;
+    text-shadow: black 2px 2px 2px;
+    text-align: center;
+}

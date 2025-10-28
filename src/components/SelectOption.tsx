@@ -22,11 +22,14 @@ function SelectOption({ question, selectedOption, index, points, dispatch }: Pro
     <>
       <ul className="option-container">
           {question.options.map((opt, i) => {
+            let borderStyle = ""
             if (selectedOption !== null) {
               if (i === correctOption) {
-                bg = "rgba(0, 255, 0, 0.6)"
+                bg = "linear-gradient(to right, rgb(21, 221, 21), rgb(21, 221, 21))"
+                borderStyle = "3px solid rgb(3, 153, 3)"
               } else {
-                bg = "rgba(255, 0, 0, 0.6)"
+                bg = "linear-gradient(to right, rgba(226, 19, 19), rgb(226, 19, 19))"
+                borderStyle = "3px solid rgba(116, 2, 2, 0.6)"
               }
             }
 
@@ -36,7 +39,7 @@ function SelectOption({ question, selectedOption, index, points, dispatch }: Pro
                   disabled={selectedOption !== null}
                   onClick={() =>
                   handleClickOption(i)}
-                  style={{ backgroundColor: bg }}
+                  style={{ background: bg, borderBottom: borderStyle }}
                   className="option-button">{opt}</button>
             </li>
             )
