@@ -2,15 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem; /* motsvarar gap-10 */
+  gap: 2.5rem;
   position: relative;
 }
 
 .header-title {
-  font-size: 4rem; /* text-6xl */
+  font-size: 4rem;
   font-weight: bold;
   text-align: center;
-  margin-top: 5rem; /* mt-20 */
+  margin-top: 2rem;
   color: white;
   text-shadow: 3px 3px 3px rgba(0, 0, 0);
 }
@@ -19,7 +19,7 @@
   position: absolute;
   top: -7rem;
   right: -320px;
-  width: 700px;
+  width: 200%;
   pointer-events: none;
   user-select: none;
   animation: spin 8s linear infinite;

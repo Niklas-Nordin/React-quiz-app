@@ -13,8 +13,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 12.5rem;
   position: relative;
+  overflow: hidden;
 }
 
 .starting-page-content {

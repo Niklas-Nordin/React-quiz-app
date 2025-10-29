@@ -137,12 +137,13 @@ function App() {
   const maxPoints = questions.reduce((total, question) => total + question.points, 0);
 
   useEffect(() => {
-    if (status === "finished") {}
+    if (status === "finished") {
       setHighscores(prev => {
         const newHighscores = [...prev, points].sort((a, b) => b - a).slice(0, 5);
         localStorage.setItem("highscores", JSON.stringify(newHighscores));
         return newHighscores;
       })
+    }
   }, [status]);
 
   useEffect(() => {
@@ -170,7 +171,7 @@ function App() {
   console.log(status)
 
   return (
-    <div>
+    <div className='quiz-page'>
       {status === "loading" && <Loader />}
       {status === "ready" && <StartingPage numQuestions={numQuestions} dispatch={dispatch} />}
       {status === "active" && 
