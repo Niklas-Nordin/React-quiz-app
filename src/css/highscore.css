@@ -1,0 +1,26 @@
+.highscore-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.highscore-title {
+    color: white;
+    text-shadow: black 2px 2px 2px;
+    font-size: 28pt;
+}
+
+.highscore-list {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.highscore-place {
+    width: 100%;
+    color: white;
+    font-size: 16pt;
+    text-shadow: black 3px 3px 3px;
+    padding: 1rem;
+}

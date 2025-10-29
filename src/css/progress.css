@@ -5,3 +5,9 @@
     align-items: center;
     margin-top: 3rem;
 }
+
+.progress-container p {
+    text-shadow: black 3px 3px 3px;
+    font-size: 14pt;
+    font-weight: 700;
+}

@@ -8,11 +8,12 @@
 
 .restart, .quit {
     flex: 1;
-    max-width: 8rem;
+    max-width: 9rem;
     padding: 0.6rem 1rem;
     background: linear-gradient(to top left, rgb(181, 177, 238), rgb(255, 255, 255));
     border: none;
     border-bottom: 3px solid rgb(129, 149, 240);
     border-radius: 20px;
     text-align: center;
+    font-size: 16pt;
 }
