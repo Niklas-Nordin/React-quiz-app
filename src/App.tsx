@@ -51,7 +51,7 @@ const initialState: State = {
   score: 0,
   answers: {},
   points: 0,
-  timeRemaining: 200
+  timeRemaining: 20
 }
 
 const reducer = (state: State, action: Action): State => {
@@ -171,23 +171,17 @@ function App() {
   console.log(status)
 
   return (
-    <div className='quiz-page'>
+    <div className='app-container'>
       {status === "loading" && <Loader />}
       {status === "ready" && <StartingPage numQuestions={numQuestions} dispatch={dispatch} />}
       {status === "active" && 
-      <>
         <Question numQuestions={numQuestions} question={currentQuestion} index={index} points={points} timeRemaining={timeRemaining} maxPoints={maxPoints} selectedOption={answers[index] ?? null} dispatch={dispatch} />
-      </>
       }
       {status === "timeOut" &&
-      <>
         <Timer timeRemaining={timeRemaining} status={status} selectedOption={answers[index] ?? null} dispatch={dispatch} />
-      </>
       }
       {status === "finished" && 
-      <>
         <Highscore highscores={highscores} dispatch={dispatch} />
-      </>
       }
       <Footer />
     </div>

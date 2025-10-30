@@ -1,16 +1,13 @@
 .next-finish-button {
-  position: absolute;
-  bottom: 5rem;        /* avstånd från botten */
-  left: 50%;
-  transform: translateX(-50%);
   width: 60%;
   padding: 0.5rem 1rem;
+  margin: 1rem auto 1rem auto;
   border-radius: 20px;
   border: none;
   border-bottom: 3px solid rgb(129, 149, 240);
-  margin: 0;
   background: linear-gradient(to top left, rgb(181, 177, 238), rgb(255, 255, 255));
   color: black;
   font-size: 16pt;
   cursor: pointer;
+  display: block;
 }
