@@ -6,7 +6,7 @@ function Header() {
       <h1 className="header-title">React quiz</h1>
       <img
         className="react-logo"
-        src="./src/assets/react.svg"
+        src="./public/react.svg"
         alt="React logo"
       />
     </div>
