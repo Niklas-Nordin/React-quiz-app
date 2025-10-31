@@ -1,5 +1,6 @@
 import type {Action} from "../App.tsx"
 import type { Question as QuestionType } from "../App.tsx";
+import "../css/selectOption.css"
 
 type Props = {
   question: QuestionType

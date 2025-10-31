@@ -18,31 +18,3 @@
     text-align: center;
     padding: 1rem;
 }
-
-.option-container {
-    width: 100%;
-    padding: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.option-items {
-    width: 80%;
-    list-style: none;
-}
-
-.option-button {
-    width: 100%;
-    padding: 0.8rem;
-    margin: 0.5rem auto;
-    border: none;
-    border-bottom: 3px solid rgb(129, 149, 240);
-    border-radius: 8px;
-    font-size: 14pt;
-    cursor: pointer;
-    background: linear-gradient(to top left, rgb(181, 177, 238), rgb(255, 255, 255));
-    color: rgb(0, 0, 0);
-}

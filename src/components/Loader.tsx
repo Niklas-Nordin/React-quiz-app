@@ -1,8 +1,10 @@
+import "../css/loader.css"
+
 function Loader() {
   return (
-    <div>
-      <p>Loading...</p>
-    </div>
+    <>
+      <p className="loader">Loading...</p>
+    </>
   );
 }
 
