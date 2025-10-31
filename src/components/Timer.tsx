@@ -35,8 +35,8 @@ function Timer({timeRemaining, status, selectedOption, dispatch}: Props) {
       {timeRemaining > 0 && (
         <div className="time-bar">
           <div style={{
-            width: `${(timeRemaining / 20) * 100}%`,
-            backgroundColor: timeRemaining > 10 ? "rgba(0, 255, 0, 0.6)" : timeRemaining > 5 ? "rgba(255, 238, 0, 0.6)" : "rgba(255, 0, 0, 0.6)"
+            width: `${(timeRemaining / 90) * 100}%`,
+            backgroundColor: timeRemaining > 45 ? "rgba(0, 255, 0, 0.6)" : timeRemaining > 20 ? "rgba(255, 238, 0, 0.6)" : "rgba(255, 0, 0, 0.6)"
           }}
           className="time-left">
           </div>

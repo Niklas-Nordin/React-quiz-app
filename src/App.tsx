@@ -48,7 +48,7 @@ const initialState: State = {
   score: 0,
   answers: {},
   points: 0,
-  timeRemaining: 20
+  timeRemaining: 90
 }
 
 const reducer = (state: State, action: Action): State => {

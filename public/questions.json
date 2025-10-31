@@ -36,13 +36,13 @@
       "points": 10
     },
     {
-      "question": "How to pass data into a child component?",
+      "question": "How do you pass data into a child component?",
       "options": ["State", "Props", "PropTypes", "Parameters"],
       "correctOption": 1,
       "points": 10
     },
     {
-      "question": "When to use derived state?",
+      "question": "When do you use derived state?",
       "options": [
         "Whenever the state should not trigger a re-render",
         "Whenever the state can be synchronized with an effect",
