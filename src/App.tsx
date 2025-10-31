@@ -4,11 +4,8 @@ import { useState } from 'react'
 import Loader from './components/Loader'
 import StartingPage from './components/StartingPage'
 import Question from './components/Question'
-import Progress from './components/Progress'
-import Header from './components/Header'
 import Timer from './components/Timer'
 import Highscore from './components/Highscore'
-import NextFinishButton from './components/NextFinishButton'
 import Footer from './components/Footer'
 
 export type Question = {
